@@ -1,0 +1,129 @@
+@media screen and (max-width: 728px){
+    * {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .grid-container, .services-results-container {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    main {
+        margin-top: .625rem;
+    }
+}
+
+@media screen and (max-width: 1184px) {
+    .grid-container, .services-results-container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    * {
+        font-size: 1.2rem;
+    }
+
+    main {
+        margin-top: .625rem;
+    }
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr));
+    gap: 0px;
+  }
+  
+  input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 0;
+  }
+      /* Cabeçalho */
+      .header {
+          display: center;
+          justify-content: space-between;
+          text-align: center;
+          padding: 10px;
+          background-color: #1723fa;
+          
+      }
+  
+      /* Caixas 1 */
+      .container {
+              display: grid;
+              grid-template-columns: 1fr 1fr 20%;
+              gap: 5px;
+              margin: 10px 0px 0px 0px;
+                            
+          }
+
+          .box {
+              border: 1px solid black;
+              padding: 10px;
+                             
+          }
+          
+          .centered-image {
+            display: block;
+            margin: 0 auto 10px;
+            
+          }
+
+          .box .title {
+            border-bottom: 1px solid black;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        
+          
+     
+      /* Caixas 2 */
+      .container2 {
+              display: grid;
+              grid-template-columns: 1fr 400px ;
+              gap: 5px;
+              margin: 5px 0px 0px 0px;
+              
+          }
+          .box2 {
+              border: 1px solid black;
+              padding: 10px; 
+              margin-bottom: 5px;
+          }
+  
+      /* Rodapé */
+      .caixa {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 20px;
+      margin: 10px 0px 0px 0px;
+      border: 1px solid #000;
+      bottom: 0;
+    
+      
+  }
+  
+  h1, h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    color:rgb(246, 246, 248)
+}
+
+h4 {
+    font-family: 'Roboto Mono', sans-serif;
+    color: rgb(7, 2, 48);
+}
+
+h2 {
+    color: rgb(128, 166, 216);
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+  
