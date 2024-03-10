@@ -1,0 +1,84 @@
+<div class="form-container">
+    <form id="formComum" (ngSubmit)="onSubmit()" #formulario="ngForm">
+      <label for="usuario">
+          Usuário:
+        </label>
+        <input name="usuario"
+            maxlength="12"
+            required
+            ngModel
+            id="usuario"
+         >
+      <label>
+        Senha:
+        <input 
+            name="senha"
+            type="password"
+            minlength="4"
+            ngModel
+            required>
+      </label>
+        <label>
+            Email:
+            <input 
+                name="email"
+                type="email"
+                ngModel
+                required>
+        </label>
+        <label>
+            Nome Completo:
+            <input 
+                name="nomeCompleto"
+                ngModel
+                required
+                pattern="[a-zA-Z]+\s[a-zA-Z]+"
+            >
+        </label>
+        <label>
+            Telefone:
+            <input 
+                name="telefone"
+                ngModel
+                required
+                pattern="[0-9]{2}[9]{1}[0-9]{4}[0-9]{4}"
+            >
+        </label>
+        <label>
+            Endereço:
+            <input 
+                name="endereco"
+                ngModel
+                required
+            >
+        </label>
+        <label>
+            Data de Nascimento:
+            <input 
+                name="dataNascimento"
+                type="date"
+                ngModel
+                required
+                dataNascimento
+            >
+        </label>
+        <label>
+            Gênero:
+            <select name="genero" ngModel required>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="outro">Outro</option>
+            </select>
+        </label>
+        <label>
+            Profissão:
+            <select name="profissao" ngModel required>
+                    <option value="engenheiro">Engenheiro</option>
+                    <option value="programador">Programador</option>
+                    <option value="designer">Designer</option>
+            </select>
+        </label>
+      <button type="submit">Enviar</button>
+      </form>
+</div>
+

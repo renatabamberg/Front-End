@@ -1,0 +1,9 @@
+<form [formGroup]="atendimentoForm" (ngSubmit)="adicionarAtendimento()" class="atendimento-form">
+    <input type="text" formControlName="nomeDoCliente" placeholder="Nome do Cliente">
+    <input type="date" formControlName="data" placeholder="Data do Atendimento">
+    <input type="time" formControlName="hora" placeholder="Hora do Atendimento">
+    <input type="text" formControlName="tipo" placeholder="Tipo de Atendimento">
+    <input type="text" formControlName="status" placeholder="Status do Atendimento">
+    <input type="text" formControlName="descricao" placeholder="Descrição do Atendimento">
+    <button type="submit">Enviar</button>
+  </form>

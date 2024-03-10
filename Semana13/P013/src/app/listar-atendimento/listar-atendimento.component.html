@@ -1,0 +1,18 @@
+  <p *ngIf="loadAtendimento.length < 1">Não existem atendimentos cadastrados!</p>
+    <table class="atendimentos-table" *ngIf="loadAtendimento.length >=1">
+        <thead>
+            <tr>
+            <th>Nome do cliente: </th>
+            <th>Data do atendimento: </th>
+            <th><button (click)="apagarTudo()">Apagar Tudo</button></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let atendimento of loadAtendimento">
+            <td>{{ atendimento.nomeDoCliente }}</td>
+            <td>{{ atendimento.data }}</td>
+            <td><button type="button" class="btnEditar" routerLink="/editar-atendimento/{{atendimento.id}}">Editar</button></td>
+            <td><button type="button" class="btnDetalhar" routerLink="/detalhar-atendimento/{{atendimento.id}}">Detalhar</button></td>
+            </tr>
+        </tbody>
+        </table>

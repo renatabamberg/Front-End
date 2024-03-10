@@ -1,0 +1,23 @@
+<p *ngIf="loadAtendimento.length < 1">Não existem atendimentos cadastrados!</p>
+<table class="atendimentos-table" *ngIf="loadAtendimento.length >=1">
+    <thead>
+        <tr>
+        <th>Nome do cliente: </th>
+        <th>Data do atendimento: </th>
+        <th>Hora do atendimento: </th>
+        <th>Tipo de atendimento: </th>
+        <th>Status do atendimento: </th>
+        <th>Descrição do atendimento: </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let atendimento of loadAtendimento">
+        <td>{{ atendimento.nomeDoCliente }}</td>
+        <td>{{ atendimento.data }}</td>
+        <td>{{ atendimento.hora }}</td>
+        <td>{{ atendimento.tipo }}</td>
+        <td>{{ atendimento.status }}</td>
+        <td>{{ atendimento.descricao }}</td>
+        </tr>
+    </tbody>
+    </table>

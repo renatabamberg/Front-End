@@ -1,0 +1,22 @@
+<div class="form-container">
+    <form id="formComum" (ngSubmit)="onSubmit()" #formulario="ngForm">
+      <label>
+        Login:
+        <input name="login"
+         minlength="4"
+         ngModel
+         >
+      </label>
+      <label>
+        Senha:
+        <input 
+          name="senha"
+          minlength="3"
+          maxlength="10" 
+          ngModel
+          required>
+      </label>
+      <button type="submit">Enviar</button>
+      </form>
+</div>
+
